@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inviteID"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:background="@drawable/greenbutton"
+        android:text="Create circle"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inviteID"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:background="@drawable/greenbutton"
+        android:text="Join circle"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:fontFamily="sans-serif" />
+
+</LinearLayout>

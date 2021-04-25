@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCDCDC"
+    android:weightSum="10"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Setting"
+        android:paddingBottom="10dp"
+        android:typeface="sans"
+        android:fontFamily="sans-serif"
+        android:paddingTop="10dp"
+        android:background="#729d39"
+        android:paddingLeft="20dp"
+        android:textColor="#FFFF"
+        android:textSize="22sp" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:background="#fffff4">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="User credentials visibility"
+    android:layout_weight="0.5"
+    android:textSize="20dp"
+    android:id="@+id/user_credentials_tv"
+    android:layout_marginLeft="5dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Profile picture visibility"
+    android:textColor="#808080"
+    android:layout_weight="1"
+    android:layout_marginTop="10dp"
+    android:textSize="18dp"
+    android:layout_marginLeft="5dp"
+    />
+ <RadioGroup
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/rg_profile_pic"
+     android:layout_weight="0.5"
+     android:layout_marginLeft="30dp"
+     >
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Only Me"
+         android:id="@+id/rb_pro_pic_onlyme"
+         android:textColor="#808080"
+         />
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Connected Users"
+         android:id="@+id/rb_pro_pic_conn_users"
+         android:textColor="#808080"
+         />
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Everyone"
+         android:id="@+id/rb_pro_pic_everyone"
+         android:textColor="#808080"
+         />
+
+ </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile number visibility"
+        android:textColor="#808080"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_mobile_no"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="30dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only Me"
+            android:id="@+id/rb_mobile_no_onlyme"
+            android:textColor="#808080"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connected Users"
+            android:id="@+id/rb_mobile_no_conn_users"
+            android:textColor="#808080"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyone"
+            android:id="@+id/rb_mobile_no_everyone"
+            android:textColor="#808080"
+            />
+
+    </RadioGroup>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

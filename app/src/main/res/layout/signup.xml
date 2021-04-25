@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:weightSum="8"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textColor="#8bc34a"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif" />
+
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/backgroundshade"
+        android:ems="15"
+        android:hint="My name is"
+        android:inputType="text"
+        android:paddingLeft="35dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#8bc34a"
+        android:textColorHint="#999"
+        android:typeface="sans" />
+
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/backgroundshade"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:hint="My Email is"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#8bc34a"
+        android:textColorHint="#999"
+        android:typeface="sans" />
+
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/backgroundshade"
+        android:drawableLeft="@drawable/lockicon"
+        android:drawableRight="@drawable/visibilty"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:hint="My password is"
+        app:fontFamily="sans-serif"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:textColor="#8bc34a"
+        android:textColorHint="#999" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:fontFamily="sans-serif"
+        android:layout_weight="1"
+        android:background="@drawable/backgroundshade"
+        android:drawableLeft="@drawable/lockicon"
+        android:drawableRight="@drawable/visibilty"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:textColor="#8bc34a"
+        android:textColorHint="#999" />
+
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/greenbutton"
+        android:text="SIGN UP"
+        app:fontFamily="sans-serif"
+        android:layout_weight="0.5"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/newuserlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Join our green community !"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#8bc34a" />
+
+</LinearLayout>

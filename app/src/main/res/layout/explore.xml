@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="Explore circles"
+        android:paddingBottom="10dp"
+        android:background="#8bc34a"
+        android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
+        android:gravity="left"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/backgroundshade"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="20dp"
+        android:layout_height="wrap_content"
+        android:hint="Search circles"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/listview">
+        <ListView
+            android:id="@+id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:divider="#d3d3d3"
+            android:dividerHeight="1dp">
+        </ListView>
+
+
+</LinearLayout>
+
+</LinearLayout>

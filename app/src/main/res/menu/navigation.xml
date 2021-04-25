@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/stats"
+        android:title="Stats" />
+
+    <item
+        android:id="@+id/navigation_commute"
+        android:icon="@drawable/commute"
+        android:title="Commute" />
+
+    <item
+        android:id="@+id/navigation_circles"
+        android:icon="@drawable/circles"
+        android:title="Circles" />
+    <item
+        android:id="@+id/navigation_leaderboard"
+        android:icon="@drawable/leaderboard"
+        android:title="Leaderboard" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+
+</menu>

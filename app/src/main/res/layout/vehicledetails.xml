@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Vehicle Details"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/vehicleType">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle type"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Two wheeler"
+                android:textSize="20sp"
+                android:id="@+id/twoWheel"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Four wheeler"
+                android:textSize="20sp"
+                android:id="@+id/fourWheel"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="E-Vehicle"
+                android:textSize="20sp"
+                android:id="@+id/Evehicle"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/fuelType">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fuel type"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Petrol"
+                android:textSize="20sp"
+                android:id="@+id/typePetrol"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Diesel"
+                android:textSize="20sp"
+                android:id="@+id/typeDiesel"/>
+        </RadioGroup>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="#ffff"
+            android:paddingLeft="30dp"
+            android:text="CC"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/vehicleCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/textview"
+            android:gravity="center_vertical"
+            android:hint="CC Description"
+            android:inputType="number"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="16dp"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="#ffff"
+            android:paddingLeft="30dp"
+            android:text="Vehicle Registration Number"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/vehicleRegisterationNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/textview"
+            android:gravity="center_vertical"
+            android:hint="License Plate Number"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="#ffff"
+            android:paddingLeft="30dp"
+            android:text="Vehicle Name"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/vehicleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview"
+            android:gravity="center_vertical"
+            android:hint="Enter your vehicle name"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="16dp"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif" />
+
+
+        <Button
+            android:id="@+id/saveVehicleDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/greenbutton"
+            android:text="Save details"
+            android:textColor="#FFFFFF"
+            android:typeface="sans"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

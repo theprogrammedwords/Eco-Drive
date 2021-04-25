@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="@color/colorAccent"
+    android:weightSum="5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".leaderboardFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/leaderboardCard"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/polling"
+                    android:background="@drawable/backgroundshade"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    tools:ignore="VectorDrawableCompat" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Badge Name"
+                android:background="@drawable/backgroundshade"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/backgroundshade" />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:max="100"
+                android:layout_height="wrap_content"
+                android:progress="75"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Leaderboard"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rankscard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_weight="2"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="View Ranking"
+                android:id="@+id/viewrank"
+                android:layout_margin="10dp"
+                android:background="@drawable/greenbutton"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/shareRank"
+                android:text="Share Rankings"
+                android:layout_margin="10dp"
+                android:background="@drawable/greenbutton"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/viewRewards"
+                android:text="View Rewards"
+                android:layout_margin="10dp"
+                android:background="@drawable/greenbutton"
+                android:layout_marginBottom="20dp"
+                />
+        </GridLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

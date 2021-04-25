@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffff"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="History"
+        android:paddingBottom="10dp"
+        android:typeface="sans"
+        android:fontFamily="sans-serif"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#729d39"
+        android:paddingLeft="20dp"
+        android:textColor="#FFFF"
+        android:textSize="22sp"
+        android:id="@+id/textView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:typeface="sans"
+        android:id="@+id/ln"
+        android:fontFamily="sans-serif"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel_profile_content"
+            android:layout_below="@id/rel2_details"
+            android:layout_marginTop="10dp"
+            >
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="30dp"
+                android:weightSum="10">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:id="@+id/iv_ridescompleted"
+                        android:layout_height="70dp"
+                        android:layout_column="1"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_car"
+                        />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:id="@+id/iv_pooling"
+                        android:layout_height="70dp"
+                        android:layout_column="2"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_car"
+                        />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_ridescompleted"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2"
+                        android:text="Rides Completed"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="#8bc70a" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:id="@+id/tv_pooling"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_column="2"
+                        android:layout_weight="2"
+                        android:text="Rides offered"
+                        android:textColor="#8bc70a"
+                        android:textSize="16sp"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="4"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:id="@+id/iv_share"
+                        android:layout_height="70dp"
+                        android:layout_column="1"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/shareicon"
+                        />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:id="@+id/iv_circles_joined"
+                        android:layout_height="70dp"
+                        android:layout_column="2"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/ic_circles"
+                        />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:id="@+id/tv_c02saved"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2"
+                        android:textColor="#8bc70a"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:text="Friends invited"
+                        />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:id="@+id/tv_trees_saved"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_column="2"
+                        android:layout_weight="2"
+                        android:textSize="16sp"
+                        android:text="Circles Joined"
+                        android:textColor="#8bc70a"
+                        />
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

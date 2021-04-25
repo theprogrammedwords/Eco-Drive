@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_alignParentBottom="true"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="sans-serif"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:typeface="sans"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:id="@+id/rel1_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/bankcardId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="center"
+                            android:paddingLeft="5dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="20sp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/badge_tv"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/name_tv"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif"
+                            android:paddingLeft="5dp"
+                            android:text="I have Green badge"
+                            android:textSize="20sp"
+                            android:typeface="sans" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/viewfpstat"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/greenbutton"
+                            android:text="Footprint Stats"
+                            android:textSize="15sp"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/viewmsstat"
+                            android:textColor="#ffffff"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/greenbutton"
+                            android:text="Money saved"
+                            android:textSize="15sp"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/backgroundshade" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel2_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel1_imageview"
+                android:layout_margin="10dp"
+                android:background="@drawable/backgroundshade"
+                android:padding="5dp">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_profile_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rel2_details"
+                android:layout_marginTop="10dp">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/iv_ridescompleted"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_column="1"
+                            android:layout_weight="2"
+                            app:srcCompat="@drawable/commute" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_pooling"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            app:srcCompat="@drawable/polling" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/tv_ridescompleted"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="2"
+                            android:text="Rides Completed"
+                            android:textAlignment="center"
+                            android:textColor="#8bc70a"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_pooling"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:text="Pooling"
+                            android:textAlignment="center"
+                            android:textColor="#8bc70a"
+                            android:textSize="16sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/iv_co2saved"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_column="1"
+                            android:layout_weight="2"
+                            android:src="@drawable/cloud" />
+
+                        <ImageView
+                            android:id="@+id/iv_trees_saved"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:src="@drawable/treesaved" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/tv_c02saved"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="2"
+                            android:text="C02 saved"
+                            android:textAlignment="center"
+                            android:textColor="#8bc70a"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_trees_saved"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:text="Trees saved"
+                            android:textAlignment="center"
+                            android:textColor="#8bc70a"
+                            android:textSize="16sp" />
+                    </TableRow>
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>
+

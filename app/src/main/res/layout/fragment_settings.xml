@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="#ffff"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:typeface="sans"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ln"
+        android:fontFamily="sans-serif"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="0.5"
+            android:id="@+id/rel1_imageview"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Main Image"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/person"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/editor_states"
+                android:clickable="true"
+                android:contentDescription="image"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/editimage"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel2_listview"
+            android:layout_below="@id/rel1_imageview"
+            >
+            <ListView
+                android:id="@+id/list"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:divider="#8bc34a"
+                android:dividerHeight="1dp"
+                >
+            </ListView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "136368794125",
+    "firebase_url": "https://ecodriveapplication-556ae.firebaseio.com",
+    "project_id": "ecodriveapplication-556ae",
+    "storage_bucket": "ecodriveapplication-556ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136368794125:android:2bfda7082cb13989",
+        "android_client_info": {
+          "package_name": "com.example.hp.ecodriveapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136368794125-sqjl1m2uoiu2b57mp1856l8mdmajnapj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.ecodriveapplication",
+            "certificate_hash": "050fca3d65730ac45bea964ed522868b8196d685"
+          }
+        },
+        {
+          "client_id": "136368794125-1otqlurdttemlraq60m9gd5e0h3lc7v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHE6dIaNWQV7KrpZDl0Bajhr1ZqALlqMI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136368794125-1otqlurdttemlraq60m9gd5e0h3lc7v5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

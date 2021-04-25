@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffff"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="image"
+        android:clickable="true"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_edit"
+        android:id="@+id/iv_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        tools:ignore="VectorDrawableCompat" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:typeface="sans"
+        android:id="@+id/ln"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="0.5"
+            android:id="@+id/rel1_imageview"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Main Image"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user"
+                android:id="@+id/user_iv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:ignore="VectorDrawableCompat" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel2_details"
+            android:layout_below="@id/rel1_imageview"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:typeface="sans"
+                android:fontFamily="sans-serif"
+                android:background="#ffff"
+                android:text="My Name is"
+                android:id="@+id/name_tv"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:typeface="sans"
+                android:fontFamily="sans-serif"
+                android:background="#ffff"
+                android:text="I have this badge"
+                android:id="@+id/badge_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/name_tv"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+        android:id="@+id/rel2_details2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rel2_details"
+        android:weightSum="10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:fontFamily="sans-serif"
+            android:id="@+id/emailText"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:text="Email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_toRightOf="@id/emailText"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/emailoutputtext"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:textColor="	#A9A9A9"
+            android:text="  abc@gmail.com"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:fontFamily="sans-serif"
+            android:id="@+id/genderText"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:layout_below="@id/emailText"
+            android:text="Gender"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_toRightOf="@id/genderText"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/genderoutputtext"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:textColor="	#A9A9A9"
+            android:layout_below="@id/emailoutputtext"
+            android:text="Female"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_below="@id/genderText"
+            android:fontFamily="sans-serif"
+            android:id="@+id/mobileText"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:text="Mobile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_toRightOf="@id/mobileText"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/mobileoutputtext"
+            android:layout_below="@id/genderoutputtext"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:textColor="	#A9A9A9"
+            android:text="9999999999"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_below="@id/mobileText"
+            android:fontFamily="sans-serif"
+            android:id="@+id/badgeText"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:text="Badge"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_toRightOf="@id/mobileText"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/badgeoutputtext"
+            android:layout_below="@id/mobileoutputtext"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:src="@drawable/ic_sample_badge"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_below="@id/badgeText"
+            android:fontFamily="sans-serif"
+            android:id="@+id/circles_added_Text"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:text="Circles"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_toRightOf="@id/mobileText"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/circles_added_outputtext"
+            android:layout_below="@id/badgeoutputtext"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:text="2 Circles"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

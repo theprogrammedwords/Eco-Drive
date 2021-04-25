@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:weightSum="8"
+    android:padding="40dp"
+    tools:context=".loginActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_weight="8"
+        android:src="@drawable/label" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="15"
+        android:layout_weight="1"
+        android:typeface="sans"
+        app:fontFamily="sans-serif"
+        android:id="@+id/usernameField"
+        android:drawableLeft="@drawable/account"
+        android:hint="My Email id is"
+        android:textColor="#8bc34a"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/backgroundshade"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:drawablePadding="10dp"
+        android:textColorHint="#999"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:typeface="sans"
+        app:fontFamily="sans-serif"
+        android:id="@+id/passwordField"
+        android:drawableLeft="@drawable/lockicon"
+        android:drawableRight="@drawable/visibilty"
+        android:hint="My password is"
+        android:layout_weight="1"
+        android:background="@drawable/backgroundshade"
+        android:layout_marginTop="10dp"
+        android:textColor="#8bc34a"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:drawablePadding="10dp"
+        android:textColorHint="#999"/>
+
+
+  <Button
+      android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif"
+        android:layout_weight="0.5"
+        android:background="@drawable/greenbutton"
+        android:text="LOGIN"
+        android:textColor="#FFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="New user? Sign up"
+        android:textSize="20sp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif"
+        android:layout_weight="0.5"
+        android:background="@drawable/backgroundshade"
+        android:id="@+id/newuserlabel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor="#8bc34a" />
+</LinearLayout>
+

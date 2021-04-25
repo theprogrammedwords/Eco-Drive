@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="15"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My Vehicles"
+        android:paddingTop="10dp"
+        app:fontFamily="sans-serif"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="20dp"
+        android:textColor="#FFFF"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="13"
+        android:typeface="sans"
+        app:fontFamily="sans-serif"
+        android:background="@drawable/backgroundshade"
+        android:text="PREVIEW VEHICLES HERE"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addvehicle"
+            android:drawablePadding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            android:background="@drawable/greenbutton"
+            android:text="Add Vehicle"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/addvehicle"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/greenbutton"
+            android:gravity="center"
+            android:text="HOME"
+            android:paddingLeft="10dp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:id="@+id/skip"
+        android:layout_marginRight="40dp"
+        android:textColor="#84bc32"
+        android:background="#ffffff"/>
+</LinearLayout>
